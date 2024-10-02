@@ -1,0 +1,174 @@
+/*
+Theme Name: annariel-cencosud2023
+Description: Responsive WordPress theme based on Twitter Bootstrap 4
+Version: 1.0
+Tags: one-column, two-columns, right-sidebar, fluid-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, rtl-language-support, theme-options, translation-ready
+*/
+
+.card-banner {
+    position: relative;
+    background: #f7f7f7;
+}
+.card-banner .container {
+    position: relative;
+    height: 600px;
+}
+.card-banner .desktop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center;
+    background-size: cover;
+}
+.card-banner .mobile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center;
+    background-size: cover;
+    display: none;
+}
+.card-banner .block {
+    position: relative;
+    z-index: 3;
+    margin-left: 5rem;
+    padding-top: 15rem;
+    color: #4d4c4c;
+    max-width: 350px;
+}
+.card-banner .block h1 {
+    color: #ff7e00;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.card-banner .block p {
+    margin-bottom: 2rem;
+}
+
+.card-banner .info {
+    border-radius: 2rem;
+    background: #efeff0;
+    padding: .25rem 1rem;
+    color: #5f9fd7;
+    font-size: .9rem;
+    display: none;
+}
+.card-banner .info strong {
+    font-weight: 900;
+    margin: 2rem auto;
+}
+
+.card-promo {
+    background: #e3e3e3;
+    padding: 3rem 0;
+}
+.card-promo h2 {
+    text-align: center;
+    color: #ff7e00;
+    font-weight: bold;
+}
+.card-promo p {
+    text-align: center;
+}
+
+.card-promo-slide {
+    padding-top: 1rem;
+}
+.card-promo-slide .owl-promo .item {
+    border: 2px solid #666;
+}
+.card-promo-slide .owl-promo .item .image {
+    height: 200px;
+    width: 250px;
+}
+.card-promo-slide .owl-promo .item .desc {
+    margin-right: 300px;
+}
+
+.card-points {
+    padding: 3rem 0;
+    background: #fff;
+    text-align: center;
+}
+.card-points h2 {
+    color: #0268a6;
+    font-size: 2rem;
+}
+.card-points p {
+    text-align: center;
+}
+.card-points .item {
+    padding-bottom: 2rem;
+    max-width: 250px;
+    margin: auto;
+}
+.card-points .item h3 {
+    color: #0268a6;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.card-points .item .link {
+    color: #0268a6;
+    font-weight: bold;
+}
+.card-points .item .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    margin: 0 auto 1rem;
+    background: center no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 992px) {
+    .card-banner .mobile {
+        background-size: 350px auto !important;
+        background-position: top center !important;
+        display: block;
+    }
+    .card-banner .desktop {
+        display: none;
+    }
+    .card-banner .block {
+        margin: auto;
+        padding-top: 18rem;
+        text-align: center;
+    }
+    .card-banner .block h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .card-banner .block p {
+        text-align: center;
+    }
+    .card-banner .info {
+        display: block;
+    }
+    .card-banner .container {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-banner .block h1 {
+        font-size: 1.6rem;
+    }
+    
+    .card-promo-slide .owl-promo .item .desc {
+        margin-right: 0;
+    }
+
+    .card-points h2 {
+        margin: 0 auto 30px;
+        max-width: 290px;
+    }
+    .card-points .item {
+        text-align: left;
+        max-width: 100%;
+    }
+}
